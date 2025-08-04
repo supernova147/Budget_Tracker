@@ -7,7 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <main>
+      
+    <h1 class="budget_tracker--title">Budget Tracker</h1>
+
+    <div class="budget_tracker--ui" id="income_input">
+        <form> 
+            <label for="income">Income</label>
+            <input type="text" name="income" id="income">
+            <input type="button" value="add income">
+            <label for="income_des">Income Description</label>
+            <input type="text" name="income_des" id="income_des">
+        </form>
+    </div>
+
+    <div class="budget_tracker--ui" id="expense_input">
+        <form> <label for="expenses">Expenses</label>
+            <input type="text" name="expenses" id="expenses">
+            <input type="button" value="add expense">
+            <label for="expense_des">Expense Description</label>
+            <input type="text" name="expense_des" id="expense_des">
+        </form>
+    </div>
+
+    <div class="budget_tracker--result">
+        <h5 class="budget_tracker--header">Calculation</h5>
+        <p id="calc_result">Calc here.</p>
+        <p>Wow, you're budgeting well! Keep it up!</p>
+    </div>
+
+    </main>
+
 <script src="script.js"></script>
+
+<footer>Budget Tracker &copy;</footer>
+
 </body>
+
 </html>
