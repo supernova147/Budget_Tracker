@@ -1,0 +1,22 @@
+{
+  "name": "budgettracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supernova147/Budget_Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supernova147/Budget_Tracker/issues"
+  },
+  "homepage": "https://github.com/supernova147/Budget_Tracker#readme",
+  "dependencies": {
+    "sass": "^1.90.0"
+  }
+}
