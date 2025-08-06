@@ -2,7 +2,7 @@
 /*
 Be able to input fields to enter income & expense descriptions
 ^ same with amounts
-add buttons to add incoem and expenses
+add buttons to add income and expenses
 --Display total budget income & expenses on UI (DOM)
 ---
 Budget calculation 
@@ -28,4 +28,12 @@ utilize object-oriented programming principles such as encapsulation, inheritanc
 in implementation
 */
 
+//Important vars below - Established to capture income, expenses; and calc result.
+
+let income = document.getElementById("income");
+let income_description = document.getElementById("income_des");
+let expense = document.getElementById("expenses");
+let expenses_description = document.getElementById("expenses_des");
+
+let calc_result = document.getElementById("calc_result");
 
