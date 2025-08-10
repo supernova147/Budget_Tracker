@@ -7,39 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul class="navbar">
-        <li>Home</li>
-        <li>Help</li>
-        <li>Why</li>
-    </ul>
-
     <main>
 
     <h1 class="budget_tracker--title">Budget Tracker</h1>
 
     <div class="budget_tracker--ui" id="income_input">
-        <form> 
-            <label for="income">Income</label>
-            <input type="text" name="income" id="income">
-            <input type="button" value="add income">
-            <label for="income_des">Income Description</label>
-            <input type="text" name="income_des" id="income_des">
+        <form id="income_form" class="income_form_input"> 
+            <label for="income_label" name="income_label" id="income_label">Income</label>
+            <input type="text" name="income" class="income_num">
+            <label for="income_des" name="income_des" id="income_desc">Income Description</label>
+            <input type="text" name="income_des" class="income_des">
+            <input type="button" value="add income" class="button_income" id="add_income_input">
         </form>
     </div>
 
     <div class="budget_tracker--ui" id="expense_input">
-        <form> <label for="expenses">Expenses</label>
-            <input type="text" name="expenses" id="expenses">
-            <input type="button" value="add expense">
-            <label for="expense_des">Expense Description</label>
-            <input type="text" name="expense_des" id="expense_des">
+        <form><label for="expense_label" id="expense_label" name="expense_label">Expenses</label>
+            <input type="text" name="expenses" class="expense_num">
+            <input type="button" value="add expense" class="button_expense" id="add_expense_input">
+            <label for="expense_desc" id="expense_desc" name="expense_desc">Expense Description</label>
+            <input type="text" name="expense_des" class="expense_des">
         </form>
     </div>
 
     <div class="budget_tracker--result">
-        <h5 class="budget_tracker--header">Calculation</h5>
-        <p id="calc_result">Calc here.</p>
-        <p>Wow, you're budgeting well! Keep it up!</p>
+        <button class="budget_tracker--button" id="calculate_result">Calculate</button>
+        <h6 class="budget_tracker--h">Total Income: <p id="total_income">$0.00</p></h6>
+        <h6 class="budget_tracker--h">Total Expense:<p id="total_expense">$0.00</h6>
+        <h6 class="budget_tracker--h">Budget: <p id="calc_result">$0.00</p></h6>
     </div>
 
     </main>
@@ -49,5 +44,4 @@
 <footer>Budget Tracker &copy;</footer>
 
 </body>
-
 </html>
